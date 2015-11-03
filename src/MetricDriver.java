@@ -30,6 +30,7 @@ public class MetricDriver {
 		this.beginDate = PsiCalendar.getSprint(this.psiName).getBeginDate();
 		this.endDate = PsiCalendar.getSprint(this.psiName).getEndDate();
 		metrics = new HashMap<String, Metric>();
+		MetricDAO metricDao = new MetricDAO();
 	}
 	
 	public static void main(String [] args) {
